@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.site-banner-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  background-size: cover; }
+
+.slider_container div {
+  -webkit-animation: round 20s linear infinite;
+    -webkit-animation-animation: round 20s linear infinite; }
+
+@-webkit-keyframes round {
+  4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/ }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/ }
+  24% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/ } }
+
+@keyframes round {
+  4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/ }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/ }
+  24% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/ } }
+
+.slider_container div:nth-child(1) {
+  -webkit-animation-delay: 0s;
+    -webkit-animation-delay-animation-delay: 0s; }
+
+.slider_container div:nth-child(2) {
+  -webkit-animation-delay: 5s;
+    -webkit-animation-delay-animation-delay: 5s; }
+
+.slider_container div:nth-child(3) {
+  -webkit-animation-delay: 10s;
+    -webkit-animation-delay-animation-delay: 10s; }
+
+.slider_container div:nth-child(4) {
+  -webkit-animation-delay: 15s;
+    -webkit-animation-delay-animation-delay: 15s; }
+
+.slider_container div:nth-child(5) {
+  -webkit-animation-delay: 20s;
+    -webkit-animation-delay-animation-delay: 20s; }
