@@ -1,0 +1,37 @@
+@import _Reset.scss
+@import _header.sass
+@import _banner.sass
+//頁首大圖及文字
+@import _banner-form.sass
+//搜尋區
+@import _font-style.sass
+//明亮及暗區的文字變化
+@import _banner_bg_slider.sass
+
+
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body,html
+    font-family: sans-serif
+    line-height: 1.5
+    box-sizing: border-box
+
+.img-fluid
+	max-width: 100%
+	height: auto
+	display: block	
+.img-rounded 
+	border-radius: 50%
+
+
+.main
+	max-width: 800px
+	margin: 0 auto
+@media (min-width: 992px)
+	.main
+    	width: 920px
+@media (min-width: 768px)
+	.main
+	    width: 720px

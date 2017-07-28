@@ -1,0 +1,53 @@
+#header
+	color: #fff
+	width: 100%
+	top: 0
+	left: 0
+	position: relative
+	z-index: 99
+	.site-logo
+		font-size: 22px
+		font-weight: 900
+		padding: 20px 15px
+		text-transform: uppercase
+	.site-menu //電腦選單
+		margin: 25px 10px
+		a
+			padding: 10px 25px
+			margin-right: 20px
+			color: #fff
+			font-size: 18px
+			text-decoration: none
+		.nav-link:hover //選單hover變化
+			color: orange
+			transition: all .5s
+		.join //加入會員btn樣式
+			border: 2px solid #fff
+			border-radius: 5px
+			&:hover
+				background-color: #fff
+				color: #222
+	.mobile-menu //手機選單
+		display: none
+
+@media (max-width: 992px)
+	#header
+		.site-menu
+			a
+				margin-right: 10px
+
+@media (max-width: 768px)//手機螢幕尺寸
+	#header
+		.site-logo
+			font-size: 18px
+			padding: 20px 8px
+		.site-menu
+			display: none
+		.mobile-menu
+			display: block
+			float: right
+
+// #header:after
+// 	content: ""
+// 	display: block
+// 	clear: both
