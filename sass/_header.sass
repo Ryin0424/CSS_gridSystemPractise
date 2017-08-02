@@ -1,3 +1,5 @@
+$menu-color: #ffad14
+
 #header
 	color: #fff
 	width: 100%
@@ -5,7 +7,7 @@
 	left: 0
 	position: relative
 	z-index: 99
-	.site-logo
+	.site-logo,.mobile-menu
 		font-size: 22px
 		font-weight: 900
 		padding: 20px 15px
@@ -19,7 +21,7 @@
 			font-size: 18px
 			text-decoration: none
 		.nav-link:hover //選單hover變化
-			color: orange
+			color: $menu-color
 			transition: all .5s
 		.join //加入會員btn樣式
 			border: 2px solid #fff
@@ -29,6 +31,8 @@
 				color: #222
 	.mobile-menu //手機選單
 		display: none
+		&:hover
+			color: $menu-color
 
 @media (max-width: 992px)
 	#header

@@ -1,12 +1,18 @@
 @import _Reset.scss
 @import _header.sass
+@import _grid.sass
+//格狀結構
+@import _font-style.sass
+//明亮及暗區的文字變化
 @import _banner.sass
 //頁首大圖及文字
 @import _banner-form.sass
 //搜尋區
-@import _font-style.sass
-//明亮及暗區的文字變化
 @import _banner_bg_slider.sass
+//banner_bg_slider效果
+@import _theme.sass
+// @import _interlude.sass
+// //視差滾動效果
 
 
 
@@ -18,20 +24,24 @@ body,html
     line-height: 1.5
     box-sizing: border-box
 
-.img-fluid
-	max-width: 100%
-	height: auto
-	display: block	
-.img-rounded 
-	border-radius: 50%
-
-
-.main
-	max-width: 800px
+.container
 	margin: 0 auto
-@media (min-width: 992px)
-	.main
-    	width: 920px
+	position: relative
+	padding: 0 15px
+	// transition: float .5s
+
 @media (min-width: 768px)
-	.main
-	    width: 720px
+	.container
+    	width: 720px
+
+@media (min-width: 992px)
+	.container
+    	width: 920px
+
+@media (min-width: 1200px)
+	.container
+   		width: 1100px
+
+@media (min-width: 1400px)
+	.container
+   		width: 1350px

@@ -2,6 +2,8 @@
 	float: left
 	padding: 0 15px //擠壓input
 
+
+
 .site-banner-form //搜尋列背景
 	    position: absolute
 	    background-color: rgba(0,0,0,.3)
@@ -9,6 +11,10 @@
 	    bottom: 0
 	    left: 0
 	    padding: 30px 0
+	    .container //給予排版範圍
+	    	max-width: 800px
+	    	margin: 0 auto
+	    
 	    input
 	    	padding: 10px
 	    	border: none
@@ -31,3 +37,12 @@
 	    			transition: all .6s
 	    			background-color: #f0ab4f
 	    			color: red
+
+@media (min-width: 992px)
+	.site-banner-form
+		.container
+	    	width: 920px
+@media (min-width: 768px)
+	.site-banner-form
+		.container
+		    width: 720px

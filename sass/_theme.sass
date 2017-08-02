@@ -1,0 +1,70 @@
+.container
+	margin: 0 auto
+	position: relative
+	padding: 0 15px
+	// transition: float .5s
+
+@media (min-width: 768px)
+	.container
+    	width: 720px
+
+@media (min-width: 992px)
+	.container
+    	width: 920px
+
+@media (min-width: 1200px)
+	.container
+   		width: 1100px
+
+@media (min-width: 1400px)
+	.container
+   		width: 1350px
+
+.container-fluid 
+	margin: 0 auto
+	position: relative
+	padding: 0 15px
+
+
+/*段落標題*/
+.title-box
+	padding: 50px 0 20px 0
+	text-align: center
+.title
+	font-size: 36px
+	font-weight: 800
+	text-align: center
+.title-sub
+	font-size: 16px
+	font-weight: 500
+	text-align: center
+
+
+/*圖片處理*/
+.img-fluid
+	max-width: 100%
+	height: auto
+	display: block	
+.img-rounded 
+	border-radius: 50%
+
+
+/*卡片模組*/
+.card
+	box-shadow: 0 0 2px rgba(0,1,2,.2)
+	position: relative
+	overflow: hidden
+	margin-bottom: 30px
+	.title
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+
+.card-center-text
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	+dark(30px)
+	text-shadow: 0px 0px 25px #222

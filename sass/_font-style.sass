@@ -1,6 +1,9 @@
-.dark
+@mixin dark($fs)
 	color: #fff
-	text-shadow: 0px 0px 15px #c37a53;
-.light
+	text-shadow: 0px 0px 15px #c37a53
+	font-size: $fs
+
+@mixin light($fs)
 	color: #222
-	text-shadow: 0px 0px 15px #c37a53;
+	text-shadow: 0px 0px 15px #c37a53
+	font-size: $fs
